@@ -1,0 +1,113 @@
+<html>
+
+<head>
+	<script src="../js/commentary.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/greensock-js/src/minified/TweenMax.min.js" type="text/javascript" charset="utf-8"></script>
+
+<style text="text/CSS">
+	@font-face {
+		src: url('../fonts/DeansgateCondensed-Bold.ttf');
+		font-family: "Deansgate";
+	}
+	
+	body {
+		width: 1920px;
+		height: 1080px;
+		overflow: hidden;
+		background: transparent;
+		padding: 0px;
+		margin: 0px;
+		text-shadow: 2px 2px 3px DimGray;
+		font-family: "Deansgate";
+	}
+	
+	.comm{
+		position: absolute;
+		left: 0px;
+		top: 0px;
+	}
+	
+	.wrappers{
+		position: absolute;
+		width: 470px;
+		height: 60px;
+		text-align: center;
+		top: 890px;
+		color: white;
+		opacity: 0;
+	}
+	
+	
+	#com1Wrapper{
+	left: 250px;
+	}
+	
+	#com2Wrapper{
+	left: 1210px
+	}
+	#com1Title{
+		width: 470px;
+		height: 60px;
+		font-size: 40px;
+	}
+	#com2Title{
+		width: 470px;
+		height: 60px;
+		font-size: 40px;
+	}
+	
+	
+	.social{
+		position: absolute;
+		top: 60px;
+		height: 30px;
+		width: 425px;
+		font-size: 20px;
+		color: white;
+		text-align: center;
+	}
+	
+	#com1Social{
+		left:80px;
+	}
+	#com2Social{
+		left:-35px;
+	}
+	
+</style>
+
+</head>
+
+<body>
+
+	<div id="commBG">
+	<video id="commVid" class="comm" type="video/webm" width="1920" height="1080"></video>
+	</div>
+	<div id="comm">
+		<div id="leftWrapper">
+			<span id="com1Wrapper" class="wrappers">
+				<span id="com1Title" class="title"></span>
+				<span id="com1Social" class="social"></span>
+		</div>
+		<div id="rightWrapper">
+			<span id="com2Wrapper" class="wrappers">
+				<span id="com2Title" class="title"></span>
+				<span id="com2Social" class="social"></span>
+			</span>
+		</div>
+	</div>
+<script type="text/javascript">
+	var nameSize = '40px'; //default font size of name wrappers, should match 'font-size' value of .wrappers
+	var socialSize = '20px';
+	var p1Move = '+90px'; //distance on x-axis that P1 name should initially be set to prior to load-in animation
+	var p2Move = '-90px'; //distance on x-axis that P2 name should initially be set to prior to load-in animation
+	var nameTime = .3; //amount of time in seconds that the load-in animation for names takes
+	var nameDelay = .5; //amount of time in seconds that the load-in animation for names is delayed before starting
+	
+</script>
+
+
+</body>
+
+</html>

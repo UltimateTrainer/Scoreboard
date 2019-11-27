@@ -1,0 +1,149 @@
+<html>
+
+<head>
+
+	<script src="../js/scoreboard.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/greensock-js/src/minified/TweenMax.min.js" type="text/javascript" charset="utf-8"></script>
+
+<style text="text/CSS">
+
+	@font-face {
+		src: url('../fonts/DeansgateCondensed-Bold.ttf');
+		font-family: "Deansgate";
+	}
+	
+	body {
+		width: 1920px;
+		height: 1080px;
+		overflow: hidden;
+		background: transparent;
+		padding: 0px;
+		margin: 0px;
+		text-transform: uppercase;
+		text-shadow: 2px 2px 3px DimGray;
+		font-family: "Deansgate";
+	}
+	
+	.scoreboard{
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		
+	}
+	.wrappers{
+		position: absolute;
+		width: 605px;
+		height: 50px;
+		font-size: 30px;
+		text-align: center;
+		top: 36px;
+		color: white;
+		opacity:0;
+	}
+	
+	#p1Wrapper{
+	left: 221px;
+	}
+	
+	#p2Wrapper{
+	left: 1183px
+	}
+	
+	.scores{
+		position: absolute;
+		top: 28px;
+		font-size: 40px;
+		color: black;
+		opacity: 0;
+	}
+	
+	
+	#p1Score {
+		left: 772px;
+	}
+	
+	#p2Score {
+		left: 1125px;
+	}
+	
+	#round {
+		position: absolute;
+		width: 141px;
+		height: 48px;
+		left: 890px;
+		top: 10px;
+		text-align: center;
+		font-size: 30px;
+		color: black;
+		opacity: 0;
+	}
+	#gameHold {
+		display: none;
+	}
+
+
+</style>
+
+</head>
+
+<body>
+
+	<div id="scoreboardBG">
+		<video id="scoreboardVid" class="scoreboard" type="video/webm" width="1920" height="100"></video> <!-- video source file set in scoreboard.js -->
+		<!--img src="../imgs/p1Score.png" class="scoreboard"></img>
+		<img src="../imgs/p1Name.png" class="scoreboard"></img>
+		<img src="../imgs/p2Score.png" class="scoreboard"></img>
+		<img src="../imgs/p2Name.png" class="scoreboard"></img>
+		<img src="../imgs/round.png" class="scoreboard"></img-->
+	</div>
+	
+	<div id="scoreboard">
+		<div id="leftWrapper">
+			<span id="p1Score" class="scores"></span>
+			<span id="p1Wrapper" class="wrappers">
+				<span id="p1Team" class="teams"></span> <!-- team/name spans nested within wrapper span to allow them to align the same without overlapping each other -->
+				<span id="p1Name" class="names"></span>
+			</span>
+		</div>
+		<div id="rightWrapper">
+			<span id="p2Score" class="scores"></span>
+			<span id="p2Wrapper" class="wrappers">
+				<span id="p2Team" class="teams"></span>
+				<span id="p2Name" class="names"></span>
+			</span>
+		</div>
+		<div id="rdWrapper">
+			<span id="round"></span>
+		</div>
+	</div>
+	
+	
+	<div id="gameHold"></div> <!-- div to remain hidden to act as a placeholder for 'game' value -->
+
+<script type="text/javascript">
+
+	var nameSize = '30px'; //default font size of name wrappers, should match 'font-size' value of .wrappers
+	var rdSize = '22px'; //default font size of round container, should match 'font-size' value of #round
+	var p1Move = '+90px'; //distance on x-axis that P1 name should initially be set to prior to load-in animation
+	var p2Move = '-90px'; //distance on x-axis that P2 name should initially be set to prior to load-in animation
+	var rdMove = '-40px'; //distance on y-axis that round should initially be set to prior to load-in animation
+	var nameTime = .3; //amount of time in seconds that the load-in animation for names takes
+	var nameDelay = .5; //amount of time in seconds that the load-in animation for names is delayed before starting
+	var rdTime = .3; //amount of time in seconds that the load-in animation for round info takes
+	var rdDelay = 1; //amount of time in seconds that the load-in animation for round info is delayed before starting
+	var scTime = 1; //amount of time in seconds that the load-in animation for scores takes
+	var scDelay = 1; //amount of time in seconds that the load-in animation for scores is delayed before starting
+	//var logoTime = 200; //amount of time the fade-in animation for logos is delayed before starting
+	var adjust2 = '-20px'; //distance on y-axis that scoreboards move when adjusting for 2nd webm
+	var adjust2scorex = '80px';
+	var adjust2scorey = '-5px';
+	var adjust3 = '+28px'; //distance on y-axis that scoreboards move when adjusting for 3rd webm
+	var adjustLg = ['+890px','+30px',.8,'240px','140px']; //array of [distance to move logos on x-axis, "" on y-axis, scaling factor to shrink logos by, original logo width, original logo height]
+
+</script>
+
+
+</body>
+
+</html>
