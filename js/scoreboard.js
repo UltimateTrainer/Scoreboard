@@ -68,7 +68,7 @@ function init(){
 				TweenMax.set('#leftWrapper',{css:{y: adjust2}}); //sets scoreboard text wrappers to match placement of 2nd webm
 				TweenMax.set('#rightWrapper',{css:{y: adjust2}});
 				TweenMax.set('#leftWrapper',{css:{x: '128px'}});
-				TweenMax.set('#p1Score',{css:{x: '-46px'}});
+				TweenMax.set('#p1Score',{css:{x: '-48px'}});
 				TweenMax.set('#rightWrapper',{css:{x: '-200px'}});
 				TweenMax.set('#p2Score',{css:{x: '118px'}});
 				TweenMax.set('#p1Score',{css:{y: adjust2scorey}});
