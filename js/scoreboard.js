@@ -47,9 +47,9 @@ function init(){
 				TweenMax.set('#leftWrapper',{css:{y: '+0px'}}); //same functions as above but this time also return wrappers to original positioning
 				TweenMax.set('#rightWrapper',{css:{y: '+0px'}});
 				TweenMax.set('#leftWrapper',{css:{x: '0px'}}); //same functions as above but this time also return wrappers to original positioning
-				TweenMax.set('#rightWrapper',{css:{x: '-90px'}});
-				TweenMax.set('#rdWrapper',{css:{y: '+25px'}});
-				TweenMax.set('#p2Score',{css:{x: '90px'}});
+				TweenMax.set('#rightWrapper',{css:{x: '0px'}});
+				TweenMax.set('#rdWrapper',{css:{y: '0px'}});
+				TweenMax.set('#p2Score',{css:{x: '0px'}});
 				
 			}
 			else if(game == 'BBCF' || game == 'DBFZ' || game == 'GGXRD' || game == 'KOFXIV' || game == 'MVCI' || game == 'UMVC3'){
@@ -67,10 +67,10 @@ function init(){
 				$('#scoreboardVid').attr('src','../webm/Melty.webm');
 				TweenMax.set('#leftWrapper',{css:{y: adjust2}}); //sets scoreboard text wrappers to match placement of 2nd webm
 				TweenMax.set('#rightWrapper',{css:{y: adjust2}});
-				TweenMax.set('#leftWrapper',{css:{x: '128px'}});
-				TweenMax.set('#p1Score',{css:{x: '-48px'}});
-				TweenMax.set('#rightWrapper',{css:{x: '-200px'}});
-				TweenMax.set('#p2Score',{css:{x: '118px'}});
+				TweenMax.set('#leftWrapper',{css:{x: '150px'}});
+				TweenMax.set('#p1Score',{css:{x: '-70px'}});
+				TweenMax.set('#rightWrapper',{css:{x: '-150px'}});
+				TweenMax.set('#p2Score',{css:{x: '+67px'}});
 				TweenMax.set('#p1Score',{css:{y: adjust2scorey}});
 				TweenMax.set('#p2Score',{css:{y: adjust2scorey}});
 				$('#round').css('color','white');
@@ -237,9 +237,11 @@ function init(){
 						TweenMax.set('#leftWrapper',{css:{y: '+0px'}}); //same functions as above but this time also return wrappers to original positioning
 						TweenMax.set('#rightWrapper',{css:{y: '+0px'}});
 						TweenMax.set('#leftWrapper',{css:{x: '0px'}}); //same functions as above but this time also return wrappers to original positioning
-						TweenMax.set('#rightWrapper',{css:{x: '-90px'}});
-						TweenMax.set('#rdWrapper',{css:{y: '+25px'}});
-						TweenMax.set('#p2Score',{css:{x: '90px'}});
+						TweenMax.set('#rightWrapper',{css:{x: '0px'}});
+						TweenMax.set('#rdWrapper',{css:{y: '0px'}});
+						TweenMax.set('#p2Score',{css:{x: '0px'}});
+						TweenMax.set('#p1Score',{css:{y: '0px'}});
+						TweenMax.set('#p2Score',{css:{y: '0px'}});
 						
 					}
 					else if(game == 'BBCF' || game == 'DBFZ' || game == 'GGXRD' || game == 'KOFXIV' || game == 'MVCI' || game == 'UMVC3'){
