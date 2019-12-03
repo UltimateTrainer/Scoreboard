@@ -38,7 +38,7 @@ function init(){
 		if(startup==true){
 			game = scObj['game'];
 			$('#gameHold').html(game);
-			$('#commVid').attr('src','../webm/commentary.webm');
+			$('#commVid').attr('src','../webm/commentary_1.webm');
 			document.getElementById('commVid').play();
 			getData(); //runs function that sets data polled from json into html objects
 			startup = false; //flags that the scoreboard/getData functions have run their first pass
