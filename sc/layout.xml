@@ -31,20 +31,20 @@
   </comboBox>
  </tab>
  <tab name="Commentary">
-  <label x="10" y="14" width="50" height="20">Left Name</label>
-  <label x="10" y="44" width="50" height="20">Left Social</label>
-  <lineEdit id="lName" x="60" y="10" width="321" height="20" />
-  <lineEdit id="lSocial" x="60" y="40" width="321" height="20" />
-  <label x="10" y="74" width="55" height="20">Right Name</label>
-  <label x="10" y="104" width="55" height="20">Right Social</label>
-  <lineEdit id="rName" x="65" y="70" width="316" height="20" />
-  <lineEdit id="rSocial" x="65" y="100" width="316" height="20" />
+  <label x="10" y="14" width="70" height="20">Left Name</label>
+  <label x="10" y="44" width="70" height="20">Left Social</label>
+  <lineEdit id="lName" x="85" y="10" width="306" height="20" />
+  <lineEdit id="lSocial" x="85" y="40" width="306" height="20" />
+  <label x="10" y="74" width="85" height="20">Right Name</label>
+  <label x="10" y="104" width="85" height="20">Right Social</label>
+  <lineEdit id="rName" x="85" y="70" width="306" height="20" />
+  <lineEdit id="rSocial" x="85" y="100" width="306" height="20" />
  </tab>
  <tab name="Misc 1">
-  <label x="10" y="14" width="46" height="13">mText 1</label>
-  <label x="10" y="44" width="46" height="13">mText 2</label>
-  <lineEdit id="mText1" x="60" y="10" width="321" height="20" />
-  <lineEdit id="mText2" x="60" y="40" width="321" height="20" />
+  <label x="10" y="14" width="56" height="13">P1Social</label>
+  <label x="10" y="44" width="56" height="13">P2Social</label>
+  <lineEdit id="P1Social" x="70" y="10" width="321" height="20" />
+  <lineEdit id="P2Socail" x="70" y="40" width="321" height="20" />
  </tab>
  <tab name="Misc 2">
   <label x="10" y="14" width="46" height="13">mText 3</label>

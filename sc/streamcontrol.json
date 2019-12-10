@@ -1,19 +1,19 @@
 {
+    "P1Social": "",
+    "P2Socail": "",
     "game": "UNIST",
     "lName": "Commentator 1",
-    "lSocial": "@com",
-    "mText1": "",
-    "mText2": "",
+    "lSocial": "",
     "mText3": "",
     "mText4": "",
-    "p1Name": "Player 1",
-    "p1Score": "0",
+    "p1Name": "NeoN",
+    "p1Score": "3",
     "p1Team": "",
-    "p2Name": "Player 2",
-    "p2Score": "0",
+    "p2Name": "Shady",
+    "p2Score": "2",
     "p2Team": "",
     "rName": "Commentator 2",
-    "rSocial": "@com",
+    "rSocial": "",
     "round": "Grand Finals",
-    "timestamp": "1575415678"
+    "timestamp": "1575431026"
 }
